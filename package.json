@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:server": "next build",
+    "build:static": "cross-env NEXT_OUTPUT=export next build",
     "start": "next start",
+    "start:server": "next start",
+    "start:static": "serve out",
     "lint": "eslint"
   },
   "dependencies": {
@@ -18,8 +22,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "serve": "^14.2.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
